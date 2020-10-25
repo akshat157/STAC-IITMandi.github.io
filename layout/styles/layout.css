@@ -102,6 +102,12 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 530px;
 }
 
+@media screen and (max-width:992px) {
+  .main-heading {
+    font-size: 1.8rem;
+    padding: 48px;
+  }
+}
 @media screen and (max-width:480px) {
   .main-heading {
     font-size: 1.5rem;
@@ -168,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p.moto{
   color: white;
-  
+
   font-size: 26px;
 }
 
@@ -1022,7 +1028,91 @@ tr:nth-child(even), #comments li:nth-child(even) {
 table a, #comments a {
   background-color: inherit;
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-right {
+  top: -5px;
+  left: 125%;
+}
+
+.tooltip-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+/* -------------------------------------Team--------------------------------------------- */
+.team_image{
+  height: 60%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.name h4 {
+  font-size: 22.5px;
+  margin-top: 10px;
+}
+/* ---------------------------------------------Alunmi---------------------------------------- */
+.alumni {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alumni-name {
+  display: none;
+}
+.alumni-msg {
+  text-align: justify;
+  text-transform: none;
+}
+
+.alumni-heading {
+  padding-bottom: 2rem;
+}
+.collage {
+  margin: auto;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width:900px) {
+  .alumni-name {
+    display: block;
+  }
+  .alumni {
+    display: block;
+  }
+  .alumni-name-on-large-screen {
+    display: none;
+  }
+}
 /* ------------------------------------------------------------------------------------------------------------ */
 
 /* ------------------------------------------------------------------------------------------------------------ */
